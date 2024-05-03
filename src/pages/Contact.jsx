@@ -5,10 +5,10 @@ const Contact = () => {
     <Container centerContent maxW="container.md" py={5}>
       <VStack spacing={4} as="form" onSubmit={(e) => e.preventDefault()}>
         <Heading>Contact Me</Heading>
-        <Input placeholder="Your Name" size="lg" />
-        <Input placeholder="Your Email" type="email" size="lg" />
-        <Textarea placeholder="Your Message" size="lg" />
-        <Button mt={4} colorScheme="blue" type="submit">Send Message</Button>
+        <Input placeholder="Your Name" size="lg" style={{ fontFamily: "Courier New", backgroundColor: "#f4f4f4" }} />
+        <Input placeholder="Your Email" type="email" size="lg" style={{ fontFamily: "Courier New", backgroundColor: "#f4f4f4" }} />
+        <Textarea placeholder="Your Message" size="lg" style={{ fontFamily: "Courier New", backgroundColor: "#f4f4f4" }} />
+        <Button mt={4} colorScheme="brand" type="submit" style={{ fontFamily: "Courier New" }}>Send Message</Button>
       </VStack>
     </Container>
   );
