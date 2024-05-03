@@ -1,9 +1,12 @@
-import { Box, Flex, Link, Spacer } from "@chakra-ui/react";
+import { Box, Flex, Link, Spacer, Image } from "@chakra-ui/react";
 import { Link as RouterLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <Flex as="nav" bg="blue.500" color="white" p={3} align="center">
+      <Box p="2">
+        <Image src="/images/logo.png" alt="Logo" boxSize={{ base: "50px", md: "60px" }} />
+      </Box>
       <Box p="2">
         <Link as={RouterLink} to="/" _hover={{ textDecoration: "none" }}>Home</Link>
       </Box>
