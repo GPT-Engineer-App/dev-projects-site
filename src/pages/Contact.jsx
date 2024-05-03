@@ -4,11 +4,11 @@ const Contact = () => {
   return (
     <Container centerContent maxW="container.md" py={5}>
       <VStack spacing={4} as="form" onSubmit={(e) => e.preventDefault()}>
-        <Heading>Contact Me</Heading>
+        <Heading fontFamily="'Courier New', Courier, monospace">Contact Me</Heading>
         <Input placeholder="Your Name" size="lg" />
         <Input placeholder="Your Email" type="email" size="lg" />
         <Textarea placeholder="Your Message" size="lg" />
-        <Button mt={4} colorScheme="blue" type="submit">Send Message</Button>
+        <Button mt={4} colorScheme="yellow" type="submit">Send Message</Button>
       </VStack>
     </Container>
   );

@@ -1,9 +1,9 @@
 import { Container, Text, VStack, Heading, SimpleGrid, Box } from "@chakra-ui/react";
 
 const ProjectItem = ({ title, description }) => (
-  <Box p={5} shadow="md" borderWidth="1px">
-    <Heading fontSize="xl">{title}</Heading>
-    <Text mt={4}>{description}</Text>
+  <Box p={5} shadow="md" borderWidth="1px" borderColor="brand.800">
+    <Heading fontSize="xl" fontFamily="'Courier New', Courier, monospace">{title}</Heading>
+    <Text mt={4} fontFamily="'Courier New', Courier, monospace">{description}</Text>
   </Box>
 );
 
